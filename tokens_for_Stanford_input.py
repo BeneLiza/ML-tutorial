@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def tokens_for_Stanford_input(tml_token_file):
-    """Function that takes a tml_token file (where sep=\|), extracts tokens and returns a conll file for Stanford
+    """Function that takes a tml_token file (where sep=\|), extracts tokens and returns a text file for Stanford
     dependency parser """
     df_tokens = pd.read_csv(tml_token_file, sep='\|', header=None).dropna(axis=1)
     # Converts to dataframe
